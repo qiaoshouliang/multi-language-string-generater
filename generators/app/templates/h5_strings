@@ -1,0 +1,2 @@
+<% for (i in keys) { %> <% if(keys[i]=='') continue; %>
+"<%= keys[i] %>" : "<%- strings[i].replace(/"/g, '\\\"') %>"<% } %>

@@ -1,0 +1,3 @@
+<resources><% for (i in keys) { %> <% if(keys[i]=='') continue; %>
+    <string name="<%= keys[i] %>"><%- strings[i].replace(/"/g, '\\\"') %></string><% } %>
+</resources>
